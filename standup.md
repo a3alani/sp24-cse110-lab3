@@ -15,6 +15,8 @@
 - [X] Start working on issues (CSS elements)
 
 ## Wednsday
+- Finish adding CSS elements
+- Marked issues as resolved
 
 
 
