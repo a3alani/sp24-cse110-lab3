@@ -1,0 +1,81 @@
+/*
+Selector {
+    property: value
+}    
+*/
+
+:root{
+    --main-bg-color: lightblue;
+}
+body {
+  background-color: var(--main-bg-color, grey);   /* fall back will be grey */
+  border-style: dotted;
+  border-color: brown;
+}
+
+h1 {
+  color: navy;
+  margin: 0px 0px 0px 580px; /* relative */
+  /* margin: <top> <right> <bottom> <left> */ 
+}
+
+
+@media (max-width: 1250px) {
+  h1 {
+    color: green;
+  }
+}
+
+h2 {
+    margin-left: 3vh; /* relative */
+}
+
+h3{
+    margin-left: 3vw; /* relative */
+}
+
+.attendance, .absent, .mentors{
+    font-family: "Jersey 10";
+    font-weight: 500;
+    font-size: larger;
+    font-style:italic;    
+    color: blueviolet;
+    padding: 0.4in 0in 0in 25px; /* absolute */
+    margin-bottom: 2mm;
+
+}
+
+.attendees{
+    font-style: italic;
+    font-size: large;
+    padding-left: 20px; /* absolute */
+    display: inline-block;
+    position:static;
+}
+
+.next-steps{
+    text-align: start;
+    text-decoration: dotted;
+    display: inline;
+    position:relative;
+}
+
+button:hover {
+  color: blue;
+}
+
+.absents{
+    font-size: large;
+    padding-left: 44px; /* absolute */
+    flex-direction: column;
+    display: grid;
+    justify-content: left;
+    align-items: center;
+}
+
+.mentors-containter{
+    display: inline-grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 10px;
+    padding-left: 25px;
+}
